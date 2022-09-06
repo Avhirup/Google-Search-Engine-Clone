@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400&display=swap');
+
+*{
+    /* font-family: 'Plus Jakarta Sans', sans-serif; */
+    margin: 0;   
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ************************* header ************************* */
+header{
+    /* border: 2px solid blue; */
+    height: 59px;
+    padding: 6px 0px;
+}
+
+.navbar{
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.navbar ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+}
+
+.navbar ul li{
+    margin-left: 15px;
+}
+
+.navbar ul li a{
+    color: black;
+    font-size: 13px;
+    font-family: Arial,sans-serif;;
+}
+
+.link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.menu-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.menu-icon:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.blue-btn{
+    background: #1a73e8;
+    border: 1px solid transparent;
+    font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 16px;
+    margin-right: 8px;
+    min-width: 96px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+.navbar ul li:last-child a{
+    color: #fff;
+}
+
+.blue-btn:hover{
+    background: #2068c7;
+}
+
+
+
+
+/* ************************* section ********************* */
+section{
+    /* flex-grow: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.logo{
+    width: 295px;
+    margin-bottom: 20px;
+}
+
+.search-bar{
+    border: 1px solid lightgray;
+    width: 600px;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+}
+
+.search-bar:hover{
+    box-shadow: 0px 2px 4px 0px #b5b5b5ad; 
+}
+
+.search-bar i{
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.712);
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.search-bar input{
+    flex-grow: 1;
+    height: 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    border: none;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+.searchBtn{
+    margin-top: 20px;
+}
+
+.searchBtn button{
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: black;
+    background-color: transparent;
+}
+
+.searchBtn button:hover{
+    border: 1px solid lightgrey;
+}
+
+.google-searchBtn{
+    width: 120px;
+}
+
+.other-searchBtn{
+    width: 140px;
+}
+
+.glanguage{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.glanguage p{
+    display: inline;
+}
+
+.glanguage a{
+    color: #1a0dab;
+    margin-left: 4.5px;
+}
+
+
+/* *************************** footer *********************** */
+footer{
+    height: 90px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.upper-footer{
+    height: 50%;
+    border-bottom: 1px solid #dadce0;
+    display: flex;
+    align-items: center;
+    background: rgba(119, 136, 153, 0.103);
+    padding: 15px 30px;
+}
+
+.upper-footer p{
+    color: #70757a;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.lower-footer{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid green; */
+    padding: 15px 30px;
+    background: rgba(119, 136, 153, 0.103);
+}
+
+.lower-footer ul li a{
+    color: #70757a;
+    font-size: 14px;
+    padding: 0px 10px;
+    letter-spacing: 0.2px;
+}
+
+.left{
+    display: flex;
+}
+
+.left li{
+    margin-right: 15px;
+}
+
+.right{
+    display: flex;
+}
+
+.right li{
+    margin-left: 15px;
+}
+
+
+
+/* ************************************ Responsiveness ********************************** */
+@media only screen and (max-width: 650px) {
+    .navbar ul {
+        font-size: 10px;
+    }
+
+    .menu-icon{
+        font-size: 14px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .logo-img {
+        width: 200px;
+    }
+    .search-bar{
+        width: 90%;
+    }
+    .footer{
+        height: 140px;
+    }
+    .upper-footer{
+        height: 40px;
+    }
+    .lower-footer{
+        height: 100px;
+        flex-direction: column;
+    }
+    .glanguage{
+        width: 80%;
+    }
+}
